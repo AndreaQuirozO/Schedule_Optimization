@@ -237,5 +237,4 @@ st.header("Horario óptimo")
 tabfinal, total = HacerTodo(horario)
 st.write(tabfinal)
 st.markdown(f"El cósto de este horario es: {total:,} unidades.")
-print(total)
 
