@@ -301,7 +301,7 @@ st.set_page_config(
 
 st.title("Calculadora para optimizar horarios")
 
-st.markdown("Esta calculadora sirve para optimizar horarios con el método pandas.")
+st.markdown("Esta calculadora sirve para optimizar horarios con la librería pandas de Python.")
 
 
 st.header("Restricciones")
