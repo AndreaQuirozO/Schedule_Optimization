@@ -311,7 +311,7 @@ st.write(horario)
 
 st.header("Horario óptimo")
 tabfinal, total, tabazul = HacerTodo(horario)
-col1, col2, col3 = st.columns([2,2,3])
+col1, col2, col3 = st.columns([1,2,3])
 with col1:
     st.write(tabazul[['Materia', 'Profesor', 'Horario']])
 with col2:
