@@ -292,7 +292,7 @@ def HacerTodo(horario):
     total = CalcularCostoTotal(tabverde)
     tabfinal = CrearTablaFinal(tabazul, tabverde)
 
-    return tabfinal, total
+    return tabfinal, total, tabazul
 
 st.set_page_config(
     page_title='Horario Óptimo',
@@ -309,8 +309,9 @@ horario = ObtenerHorario()
 st.write(horario)
 
 st.header("Horario óptimo")
-tabfinal, total = HacerTodo(horario)
+tabfinal, total, tabazul = HacerTodo(horario)
 st.write(tabfinal)
 st.markdown(f"El costo de este horario es: {total:,} unidades.")
 print(total)
+print(tabazul)
 
