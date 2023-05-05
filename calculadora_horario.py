@@ -268,10 +268,10 @@ def CrearTablaFinal(tabazul, tabverde):
     tabfinal['Salones a utilizar'] = tabverde['Salones a utilizar']
     tabfinal['Costos materia'] = tabverde['Costos Materias']
     tabfinal['Costos salones'] = tabverde['Costos Salones']
+    tabfinal['Horario'] = tabverde['Horarios']
     tabfinal = tabfinal[['Horario', 'Salones a utilizar', 
                         'Costos salones', 'Materia', 'Costos materia', 
                         'Profesor', 'Costos Profesor Horario']]
-    tabfinal['Horario'] = horarioslist
     return tabfinal
     
 
