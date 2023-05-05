@@ -271,6 +271,7 @@ def CrearTablaFinal(tabazul, tabverde):
     tabfinal = tabfinal[['Horario', 'Salones a utilizar', 
                         'Costos salones', 'Materia', 'Costos materia', 
                         'Profesor', 'Costos Profesor Horario']]
+    tabfinal['Horario'] = horarioslist
     return tabfinal
     
 
@@ -310,11 +311,12 @@ st.write(horario)
 
 st.header("Horario óptimo")
 tabfinal, total, tabazul = HacerTodo(horario)
-col1, col2, col3 = st.columns([2,1,3])
+col1, col2, col3 = st.columns([1,2,3])
 with col1:
+    st.write(tabazul[['Materia', 'Profesor', 'Horario']])
     st.write(tabfinal)
-with col3:
-    st.write(tabazul)
+with col2:
+    st.write(tabfinal)
     
 st.markdown(f"El costo de este horario es: {total:,} unidades.")
 print(total)
