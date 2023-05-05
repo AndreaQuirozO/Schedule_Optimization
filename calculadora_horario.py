@@ -317,5 +317,5 @@ with col2:
     st.write(tabazul)
     
 st.markdown(f"El costo de este horario es: {total:,} unidades.")
-    print(total)
+print(total)
 
