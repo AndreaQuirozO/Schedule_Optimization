@@ -314,9 +314,8 @@ tabfinal, total, tabazul = HacerTodo(horario)
 col1, col2, col3 = st.columns([1,2,3])
 with col1:
     st.write(tabazul[['Materia', 'Profesor', 'Horario']])
-    st.write(tabfinal)
 with col2:
-    st.write(tabfinal)
+    st.write(tabfinal.drop('Costos Profesor Horario', axis=1)
     
 st.markdown(f"El costo de este horario es: {total:,} unidades.")
 print(total)
